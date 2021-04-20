@@ -86,16 +86,34 @@ nav ul li a{
 }
 p, h3, a{
     color: #fefb1e;
+    display: inline;
 }
 .Right{
     margin: 20px;
     width: 45%;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: column wrap;
+}
+.Right a img{
+    width: 100%;
+}
+.Right a {
+    width: 40%;
 }
 .Left{
     margin: 20px;
     width: 45%;
     display: flex;
+    flex-flow: column wrap;
     justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
 }
+.Left a img{
+    width: 100%;
+}
+.Left a {
+    width: 40%;
+

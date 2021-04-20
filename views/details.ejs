@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>details</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/details.css">
 </head>
 <body>
     <header>
@@ -19,6 +19,7 @@
                 <p><%= details.quote%></p>
                 <form action="/favorite-quotes/<%= details.id%>?_method=PUT" method="POST">
                     <input type="text" value="<%= details.quote%>" name="quote">
+                    <br>
                     <button>update character</button>
                 </form>
                 <form action="/favorite-quotes/<%= details.id%>?_method=DELETE" method="POST">

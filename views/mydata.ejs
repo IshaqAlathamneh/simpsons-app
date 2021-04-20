@@ -20,6 +20,7 @@
                 <a href="/favorite-quotes/<%= elem.id%>"><img src="<%= elem.image%>" alt=""></a>
                 <h3><%= elem.name%></h3>
                 <p><%= elem.quote%></p>
+                <br>
                 <form action="/favorite-quotes/<%= elem.id%>" method="GET">
                     <button type="submit"> View Details</button>
                 </form>
