@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <header>
+        <%- include('./layout/header.ejs')%>
+    </header>
+    <main>
+
+        <% char.forEach( elem => {%>
+            <div>
+                <form action="/" method="POST">
+                <h3><%= elem.character%></h3>
+                <input type="hidden" name="name" value="<%= elem.character%>">
+                <p><%= elem.quote%></p>
+                <input type="hidden" name="quote" value="<%= elem.quote%>">
+                <img src="<%= elem.image%>" alt="">
+                <input type="hidden" name="image" value="<%= elem.image%>">
+                <input type="hidden" name="direction" value="<%= elem.characterDirection%>">
+                <br>
+                <button type="submit">Favor Character</button>
+            </form>
+            </div>
+            <%})%>
+
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

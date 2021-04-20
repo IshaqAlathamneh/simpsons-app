@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+div{
+    width: 24%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div img {
+    width: 70%;
+}
+div button{
+    background-color: #62C8E4;
+}

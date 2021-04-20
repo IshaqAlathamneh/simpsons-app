@@ -1,0 +1,101 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #62C8E4;
+}
+div{
+    background-color: #16a085;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 100px;
+}
+nav{
+    
+    width: 100%;
+    background-color: #16a085;
+    height: 100%;
+    justify-content: space-between;
+}
+nav img {
+    width: 13%;
+}
+nav ul{
+    display: flex;
+    width: 86%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+nav ul li{
+    display: inline;
+    /* margin: auto 20px; */
+}
+nav ul li a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+p, h3, a{
+    color: #fefb1e;
+}
+.Right{
+    margin: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+.Left{
+    margin: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+}
